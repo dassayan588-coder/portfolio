@@ -1,0 +1,71 @@
+.navContainer {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 2rem;
+  padding: 0.75rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  height: 48px;
+  width: 48px;
+}
+
+.navContainer.expanded {
+  height: auto;
+  width: 220px;
+  border-radius: 1.5rem;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: var(--color-text);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  margin-top: 1.5rem;
+}
+
+.navContainer.expanded .linksContainer {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.navLink:hover {
+  background: var(--color-card-hover);
+  color: var(--color-accent);
+  transform: translateX(5px);
+}

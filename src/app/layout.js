@@ -16,13 +16,17 @@ export const metadata = {
   description: "M.Sc. Zoology Student & Machine Learning Enthusiast",
 };
 
+import SmoothScroll from "@/components/SmoothScroll";
+
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
       className={`${inter.variable} ${inconsolata.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

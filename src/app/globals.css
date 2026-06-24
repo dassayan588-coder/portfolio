@@ -8,9 +8,9 @@
   --color-text: #ffffff;
   --color-accent: #7317cf;
   --color-accent-glow: rgba(115, 23, 207, 0.4);
-  --color-card-bg: rgba(255, 255, 255, 0.03);
-  --color-card-border: rgba(255, 255, 255, 0.08);
-  --color-card-hover: rgba(255, 255, 255, 0.06);
+  --color-card-bg: rgba(115, 23, 207, 0.06); /* Subtle purple tint */
+  --color-card-border: rgba(115, 23, 207, 0.15); /* Tinted border */
+  --color-card-hover: rgba(115, 23, 207, 0.10); /* Stronger tint on hover */
 }
 
 body.light-mode {
@@ -18,9 +18,9 @@ body.light-mode {
   --color-text: #18181b; /* Dark text */
   --color-accent: #6b21a8; /* Deeper purple for better contrast */
   --color-accent-glow: rgba(107, 33, 168, 0.2);
-  --color-card-bg: rgba(255, 255, 255, 0.6);
-  --color-card-border: rgba(0, 0, 0, 0.1);
-  --color-card-hover: rgba(255, 255, 255, 0.9);
+  --color-card-bg: rgba(107, 33, 168, 0.06); /* Subtle purple tint */
+  --color-card-border: rgba(107, 33, 168, 0.18); /* Tinted border */
+  --color-card-hover: rgba(107, 33, 168, 0.12); /* Stronger tint on hover */
 }
 
 /* ========================================
