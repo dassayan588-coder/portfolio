@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
-import ParticlesBackground from "@/components/ParticlesBackground";
-import BigDna from "@/components/BigDna";
+import WebGLBackground from "@/components/WebGLBackground";
+import ThemeToggle from "@/components/ThemeToggle";
 import Hero from "@/components/Hero";
 import Profile from "@/components/Profile";
 import Academics from "@/components/Academics";
@@ -14,8 +14,8 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <>
-      <ParticlesBackground />
-      <BigDna />
+      <ThemeToggle />
+      <WebGLBackground />
       <main className={styles.main}>
         <Hero />
         <Profile />

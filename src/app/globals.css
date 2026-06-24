@@ -4,13 +4,23 @@
 :root {
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'Inconsolata', monospace;
-  --color-bg: #0a0a0f;
+  --color-bg: #1c1c1e; /* Deep charcoal */
   --color-text: #ffffff;
   --color-accent: #7317cf;
   --color-accent-glow: rgba(115, 23, 207, 0.4);
-  --color-card-bg: rgba(255, 255, 255, 0.05);
-  --color-badge-bg: #2563eb;
-  --color-success: #1db954;
+  --color-card-bg: rgba(255, 255, 255, 0.03);
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-card-hover: rgba(255, 255, 255, 0.06);
+}
+
+body.light-mode {
+  --color-bg: #f4f4f5; /* Light gray */
+  --color-text: #18181b; /* Dark text */
+  --color-accent: #6b21a8; /* Deeper purple for better contrast */
+  --color-accent-glow: rgba(107, 33, 168, 0.2);
+  --color-card-bg: rgba(255, 255, 255, 0.6);
+  --color-card-border: rgba(0, 0, 0, 0.1);
+  --color-card-hover: rgba(255, 255, 255, 0.9);
 }
 
 /* ========================================
