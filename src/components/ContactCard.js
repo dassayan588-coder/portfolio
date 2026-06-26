@@ -12,7 +12,7 @@ export default function ContactCard() {
         <div className={styles.links}>
           <a href="mailto:dassayan588@gmail.com" className={styles.linkButton}>
             <Mail size={24} />
-            <span>sayandas588@gmail.com</span>
+            <span>dassayan588@gmail.com</span>
           </a>
           <a href="https://www.linkedin.com/in/sayan-das141104?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
             <Network size={24} />
